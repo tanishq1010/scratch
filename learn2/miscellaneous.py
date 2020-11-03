@@ -40,7 +40,7 @@ def video_book_validation(df,csv_name):
         if df["Section_name"][ind]=="INDIVIDUAL":
             continue
         if df["Type"][ind]=="Video":
-            answer =check_grade_by_video_id(df["Id"][ind],df["Grade"][ind])
+            answer =check_grade_by_video_id(df["Id"][ind],str(df["Grade"][ind]))
             df["Correctly present in CG"][ind]= answer
         elif df["Type"][ind]=="Book":
             answer =check_grade_by_book_id(df["Id"][ind],df["Exam"][ind])
