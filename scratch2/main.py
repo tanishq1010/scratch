@@ -18,7 +18,10 @@ df_2.to_csv("CG_onlinetyari.csv",index=False)
 df_2=pd.read_csv("CG_onlinetyari.csv")
 
 
-
+df_1.drop_duplicates(inplace=True)
+df_2.drop_duplicates(inplace=True)
+# print(df_1)
+# print(df_2)
 
 
 list1 = [""] * len(df_2)
@@ -29,7 +32,7 @@ for ind in df_2.index:
     # int(df_2["id"][ind]))
     y=int(df_2["id"][ind])
     df_2["ID"][ind]=y
-
+    # print(df_2["ID"][ind])
     i+=1
     # if i>20:
         # break
