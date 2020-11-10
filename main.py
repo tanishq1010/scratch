@@ -21,16 +21,17 @@ cursor = collection.find(query, projection=projection)
 df = pd.DataFrame(columns=['NQE_question_id'])
 df.to_csv('NQE_data.csv',index=False)
 i=0
+df = pd.read_csv("NQE_data.csv")
 for doc in cursor:
  try:
-    df = pd.read_csv("NQE_data.csv")
+    
     # print(doc)
     LIST = doc['questions']['normal_questions']
     # print(LIST)
     for question in LIST:
         df.loc[len(df)] = [question]
-
-    df.to_csv('NQE_data.csv', index=False)
+    if i%5000==0:
+     df.to_csv('NQE_data.csv', index=False)
  except Exception as e:
      print(e)
      
