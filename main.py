@@ -22,6 +22,7 @@ df = pd.DataFrame(columns=['NQE_question_id'])
 df.to_csv('NQE_data.csv',index=False)
 i=0
 for doc in cursor:
+ try:
     df = pd.read_csv("NQE_data.csv")
     # print(doc)
     LIST = doc['questions']['normal_questions']
@@ -30,8 +31,12 @@ for doc in cursor:
         df.loc[len(df)] = [question]
 
     df.to_csv('NQE_data.csv', index=False)
-    i+=1
-    print(i)
+ except Exception as e:
+     print(e)
+     
+ i+=1
+ print(i)
+
     # print(df)
 
 # df = pd.DataFrame(list(cursor))
