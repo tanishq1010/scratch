@@ -1,0 +1,8 @@
+u 100
+r 100
+run_time 2m
+step_users 50
+step_time 10s
+limit_fail_ratio 0.01
+limit_avg_response_time_in_ms 200000000
+limit_95_percentile_response_time_in_ms 600000000
