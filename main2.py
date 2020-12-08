@@ -57,6 +57,6 @@ for ind in df1.index:
         print(e)
     k += 1
     print(k)
- df.to_csv('NQE_data.csv', index=False)
+df.to_csv('NQE_data.csv', index=False)
 
 # df1.to_csv("trash.csv",index=False)
