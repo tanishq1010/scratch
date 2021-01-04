@@ -1,0 +1,123 @@
+Goal,Exam_name,Grade,Format_refrence
+CBSE,1st CBSE,1,5ec5867a0c88fe5860961943
+CBSE,2nd CBSE,2,5ec5867a0c88fe5860961943
+CBSE,3rd CBSE,3,5ec5867a0c88fe5860961943
+CBSE,4th CBSE,4,5ec5867a0c88fe5860961943
+CBSE,5th CBSE,5,5ec5867a0c88fe5860961943
+CBSE,6th CBSE,6,5ec5867a0c88fe5860961943
+CBSE,7th CBSE,7,5ec5867a0c88fe5860961943
+CBSE,8th CBSE,8,5ec5867a0c88fe5860961943
+CBSE,9th CBSE,9,5ec5867a0c88fe5860961943
+CBSE,10th CBSE,10,5ec5867a0c88fe5860961943
+CBSE,11th CBSE,11,5ec5867a0c88fe5860961943
+CBSE,12th CBSE,12,5ec5867a0c88fe5860961943
+ICSE,1st ICSE,1,5eef299c420f624a7cd798db
+ICSE,2nd ICSE,2,5eef299c420f624a7cd798db
+ICSE,3rd ICSE,3,5eef299c420f624a7cd798db
+ICSE,4th ICSE,4,5eef299c420f624a7cd798db
+ICSE,5th ICSE,5,5eef299c420f624a7cd798db
+ICSE,6th ICSE,6,5eef299c420f624a7cd798db
+ICSE,7th ICSE,7,5eef299c420f624a7cd798db
+ICSE,8th ICSE,8,5eef299c420f624a7cd798db
+ICSE,9th ICSE,9,5eef299c420f624a7cd798db
+ICSE,10th ICSE,10,5eef299c420f624a7cd798db
+ICSE,11th ICSE,11,5eef299c420f624a7cd798db
+ICSE,12th ICSE,12,5eef299c420f624a7cd798db
+Rajasthan Board,1st RBSE,1,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,2nd RBSE,2,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,3rd RBSE,3,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,4th RBSE,4,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,5th RBSE,5,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,6th RBSE,6,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,7th RBSE,7,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,8th RBSE,8,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,9th RBSE,9,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,10th RBSE,10,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,11th RBSE,11,5ef2ff88e52bc182d359b8f7
+Rajasthan Board,12th RBSE,12,5ef2ff88e52bc182d359b8f7
+Maharashtra Board,1st Maharashtra Board,1,5ef30dcce52bc182d359ccfd
+Maharashtra Board,3rd Maharashtra Board,3,5ef30dcce52bc182d359ccfd
+Maharashtra Board,4th Maharashtra Board,4,5ef30dcce52bc182d359ccfd
+Maharashtra Board,5th Maharashtra Board,5,5ef30dcce52bc182d359ccfd
+Maharashtra Board,6th Maharashtra Board,6,5ef30dcce52bc182d359ccfd
+Maharashtra Board,7th Maharashtra Board,7,5ef30dcce52bc182d359ccfd
+Maharashtra Board,8th Maharashtra Board,8,5ef30dcce52bc182d359ccfd
+Maharashtra Board,9th Maharashtra Board,9,5ef30dcce52bc182d359ccfd
+Maharashtra Board,10th Maharashtra Board,10,5ef30dcce52bc182d359ccfd
+Maharashtra Board,11th Maharashtra Board,11,5ef30dcce52bc182d359ccfd
+Maharashtra Board,12th Maharashtra Board,12,5ef30dcce52bc182d359ccfd
+Maharashtra Board,2nd Maharashtra Board,2,5ef30dcce52bc182d359ccfd
+Engineering,BITSAT,PreUG,5f17102be61885046e5d9780
+Engineering,AP EAMCET,PreUG,5ec5867f0c88fe5860961948
+Engineering,VITEEE,PreUG,5f17102be61885046e5d9780
+Engineering,JEE Main,PreUG,5f17102be61885046e5d9780
+Engineering,MHT-CET,PreUG,5f17102be61885046e5d9780
+Engineering,TS EAMCET,PreUG,5ec5867f0c88fe5860961948
+Engineering,JEE Advanced,PreUG,5f17102be61885046e5d9780
+Medical,AP EAMCET,PreUG,5f17177ee61885046e5db8d0
+Medical,NEET,PreUG,5f17177ee61885046e5db8d0
+Medical,TS EAMCET,PreUG,5f17177ee61885046e5db8d0
+Banking,IBPS PO Mains,PrePG,5ec586770c88fe586096193e
+Banking,IBPS RRB Officer Scale-I Prelims,PrePG,5ec586770c88fe586096193e
+Banking,IBPS SO Marketing Officer (Scale I) Prelims,PrePG,5ec586770c88fe586096193e
+Banking,IBPS Clerk Prelims,PrePG,5ec586770c88fe586096193e
+Banking,IBPS Clerk Mains,PrePG,5ec586770c88fe586096193e
+Banking,IBPS RRB Office Assistant Mains,PrePG,5ec586770c88fe586096193e
+Banking,IBPS RRB Office Assistant Prelims,PrePG,5ec586770c88fe586096193e
+Banking,IBPS PO Prelims,PrePG,5ec586770c88fe586096193e
+Banking,SBI PO Mains,PrePG,5ec586770c88fe586096193e
+Banking,IBPS RRB Officer Scale-I Mains,PrePG,5ec586770c88fe586096193e
+Banking,SBI Clerk Prelims,PrePG,5ec586770c88fe586096193e
+Banking,SBI Clerk Mains,PrePG,5ec586770c88fe586096193e
+Banking,SBI PO Prelims,PrePG,5ec586770c88fe586096193e
+Insurance,NIACL Assistant Prelims,PrePG,5f520569429ee9ee0e8c1b04
+Insurance,LIC Assistant Prelims,PrePG,5f520569429ee9ee0e8c1b04
+Insurance,Insurance,PrePG,5f520569429ee9ee0e8c1b04
+Railways,RRC Group D CBT,PrePG,5f52048858ae126dab8a36cd
+Railways,RRB NTPC CBT 1,PrePG,5f52048858ae126dab8a36cd
+Railways,Railways,PrePG,5f52048858ae126dab8a36cd
+SSC,SSC MTS Tier I,PrePG,5f5207e158ae126dab8a370e
+SSC,SSC CHSL Tier-I,PrePG,5f5207e158ae126dab8a370e
+SSC,SSC CGL Tier-I,PrePG,5f5207e158ae126dab8a370e
+SSC,SSC,PrePG,5f5207e158ae126dab8a370e
+Teaching,CTET Paper 1,PrePG,5eb7ced0c20bf39d163d763c
+Teaching,CTET Paper 2,PrePG,5eb7ced0c20bf39d163d763c
+Defence,DRDO MTS Tier I,PrePG,5f5206b031562a10f6a592ff
+Defence,CISF Head Constable,PrePG,5f5206b031562a10f6a592ff
+Defence,Defence,PrePG,5f5206b031562a10f6a592ff
+Jammu and Kashmir Board,1st Jammu and Kashmir Board,1,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,2nd Jammu and Kashmir Board,2,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,3rd Jammu and Kashmir Board,3,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,4th Jammu and Kashmir Board,4,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,5th Jammu and Kashmir Board,5,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,6th Jammu and Kashmir Board,6,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,7th Jammu and Kashmir Board,7,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,8th Jammu and Kashmir Board,8,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,9th Jammu and Kashmir Board,9,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,10th Jammu and Kashmir Board,10,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,11th Jammu and Kashmir Board,11,5faec359329f1db7f7a357f5
+Jammu and Kashmir Board,12th Jammu and Kashmir Board,12,5faec359329f1db7f7a357f5
+Karnataka Board,1st Karnataka State Board,1,5f12c93e7f10acd6461e5080
+Karnataka Board,2nd Karnataka State Board,2,5f12c93e7f10acd6461e5080
+Karnataka Board,3rd Karnataka State Board,3,5f12c93e7f10acd6461e5080
+Karnataka Board,4th Karnataka State Board,4,5f12c93e7f10acd6461e5080
+Karnataka Board,5th Karnataka State Board,5,5f12c93e7f10acd6461e5080
+Karnataka Board,6th Karnataka State Board,6,5f12c93e7f10acd6461e5080
+Karnataka Board,7th Karnataka State Board,7,5f12c93e7f10acd6461e5080
+Karnataka Board,8th Karnataka State Board,8,5f12c93e7f10acd6461e5080
+Karnataka Board,9th Karnataka State Board,9,5f12c93e7f10acd6461e5080
+Karnataka Board,10th Karnataka State Board,10,5f12c93e7f10acd6461e5080
+Karnataka Board,11th Karnataka State Board,11,5f12c93e7f10acd6461e5080
+Karnataka Board,12th Karnataka State Board,12,5f12c93e7f10acd6461e5080
+Telangana Board,1st Telangana State Board,1,5f12c9997f10acd6461e50e9
+Telangana Board,2nd Telangana State Board,2,5f12c9997f10acd6461e50e9
+Telangana Board,3rd Telangana State Board,3,5f12c9997f10acd6461e50e9
+Telangana Board,4th Telangana State Board,4,5f12c9997f10acd6461e50e9
+Telangana Board,5th Telangana State Board,5,5f12c9997f10acd6461e50e9
+Telangana Board,6th Telangana State Board,6,5f12c9997f10acd6461e50e9
+Telangana Board,7th Telangana State Board,7,5f12c9997f10acd6461e50e9
+Telangana Board,8th Telangana State Board,8,5f12c9997f10acd6461e50e9
+Telangana Board,9th Telangana State Board,9,5f12c9997f10acd6461e50e9
+Telangana Board,10th Telangana State Board,10,5f12c9997f10acd6461e50e9
+Telangana Board,11th Telangana State Board,11,5f12c9997f10acd6461e50e9
+Telangana Board,12th Telangana State Board,12,5f12c9997f10acd6461e50e9
