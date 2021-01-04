@@ -28,10 +28,10 @@ def main():
             "exam_name": exam,
             "goal": goal,
             "grade": grade
-
+            
         }
 
-        response1 = callAPI('POST', 'https://preprodms.embibe.com', '/fiber_ms/v1/home', embibe_token,
+        response1 = callAPI('POST', 'https://preprodms.embibe.com', '/fiber_ms/v1/home/practise', embibe_token,
                             json.dumps(payload))
         url = "/fiber_app/learning_maps/filters/" + str(format_refrence) + "/" + str(goal) + "/" + str(exam)
         response2 = callAPI('GET', 'https://content-demo.embibe.com', url,
