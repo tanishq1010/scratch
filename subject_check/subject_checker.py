@@ -4,7 +4,7 @@ import json
 import random
 from openpyxl import Workbook, load_workbook
 from API_call_method import callAPI
-from goal_exam import goal_exam
+#from goal_exam import goal_exam
 
 
 def main():
