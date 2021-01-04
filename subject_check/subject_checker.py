@@ -31,7 +31,7 @@ def main():
             
         }
 
-        response1 = callAPI('POST', 'https://preprodms.embibe.com', '/fiber_ms/v1/home/practise', embibe_token,
+        response1 = callAPI('POST', 'https://preprodms.embibe.com', '/fiber_ms/home/test', embibe_token,
                             json.dumps(payload))
         url = "/fiber_app/learning_maps/filters/" + str(format_refrence) + "/" + str(goal) + "/" + str(exam)
         response2 = callAPI('GET', 'https://content-demo.embibe.com', url,
