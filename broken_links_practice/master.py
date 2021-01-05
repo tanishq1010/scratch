@@ -23,7 +23,7 @@ def for_all_exam_goal(goal_exam_grade):
         home_data(1500001304, goal_exam_grade["Goal"][ind], goal_exam_grade["Grade"][ind],
                   goal_exam_grade["Exam_name"][ind],
                   goal_exam_grade["Goal"][ind], 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJjb3VudHJ5IjoxLCJ1c2VyX3R5cGUiOjEsImNyZWF0ZWQiOjE2MDk4NjAzOTYsIm9yZ2FuaXphdGlvbl9pZCI6IjEiLCJpZCI6MTUwMDAwMTMwNCwiZXhwIjoxNjExMDY5OTk2LCJtb2JpbGVfdmVyaWZpY2F0aW9uX3N0YXR1cyI6ZmFsc2UsImVtYWlsX3ZlcmlmaWNhdGlvbl9zdGF0dXMiOmZhbHNlLCJlbWFpbCI6IjUwNTQ1ODVfMTA5NjgwNjkzNDA0MDE2OTBAZW1iaWJlLXVzZXIuY29tIn0.bJRRZyF4eh_N7AhbjRf4SeGvKEmjObVSoTzR7SvofNJFh-BYtWROWNxi8kZaXs2LmFw7StQsg2eMc3iX0ipb4Q')
-        break
+        #break
 
 
 if __name__ == '__main__':
