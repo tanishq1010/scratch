@@ -58,7 +58,7 @@ class Source(object):
             "resource_type": "test",
             "source": "fiber"
         }
-        response1 = API_call("https://fiberdemoms.embibe.com/fiber_ms/v1/atg/progress",payload, "POST",'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoic3R1ZGVudCIsInRpbWVfc3RhbXAiOiIyMDIwLTExLTE3IDExOjM3OjM0IFVUQyIsImlzX2d1ZXN0IjpmYWxzZSwiaWQiOjM3MjE0MDQsImVtYWlsIjoiMzYxNTU5NF8xNjAyNzgzNzQ2QGVtYmliZS11c2VyLmNvbSJ9.xAKYAszvYPOTEWHzdTbfSROvr-mi5yxK28EpFceaWCvfYhMaawTce2vTMlaIGRTi48tLhzvQ__CgUgeN79vdnQ',0)
+        response1 = API_call("https://preprodms.embibe.com/fiber_ms/v1/atg/progress",payload, "POST",'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoic3R1ZGVudCIsInRpbWVfc3RhbXAiOiIyMDIwLTExLTE3IDExOjM3OjM0IFVUQyIsImlzX2d1ZXN0IjpmYWxzZSwiaWQiOjM3MjE0MDQsImVtYWlsIjoiMzYxNTU5NF8xNjAyNzgzNzQ2QGVtYmliZS11c2VyLmNvbSJ9.xAKYAszvYPOTEWHzdTbfSROvr-mi5yxK28EpFceaWCvfYhMaawTce2vTMlaIGRTi48tLhzvQ__CgUgeN79vdnQ',0)
 
         if response1 is None:
             self.main(atg_id, difficulty, duration, exam_code, name, request_id)
