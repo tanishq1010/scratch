@@ -17,7 +17,7 @@ for ind in df.index:
         # break
 # else:
 # continue
-time.sleep(600)
+time.sleep(120)
 
 # for i in range(0, 10000000):
 progress_check(pd.read_csv('Create_test_data.csv'))
