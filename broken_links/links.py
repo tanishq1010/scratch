@@ -26,9 +26,9 @@ class Source(object):
             "embibe-token"] = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoic3R1ZGVudCIsInRpbWVfc3RhbXAiOiIyMDIwLTExLTAyIDA3OjM2OjM5IFVUQyIsImlzX2d1ZXN0IjpmYWxzZSwiaWQiOjM2MTU1OTQsImVtYWlsIjoiYzEzNDEzOGUwNDc1QGppby1lbWJpYmUuY29tIn0.wC4cNu2D6LAWpWfWPPVL_ErT6X5kW4MfXNNiQqxQw3CbVl_eZHbaScYpXvOY93axd1HU14ITXEvObmHG5sE9Hg'
         response = requests.request(method, url, headers=self.headers, data=payload)
 
-        if response.status_code != 200:
-            print(url + ' - ' + str(response.content))
-            return None
+        # if response.status_code != 200:
+        #     print(url + ' - ' + str(response.content))
+        #     r
         return response
 
     def main(self, df):
