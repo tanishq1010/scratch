@@ -23,7 +23,7 @@ def for_all_exam_goal(goal_exam_grade):
         home_data(3615594, goal_exam_grade["Goal"][ind], goal_exam_grade["Grade"][ind],
                   goal_exam_grade["Exam_name"][ind],
                   goal_exam_grade["Goal"][ind], 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoic3R1ZGVudCIsInRpbWVfc3RhbXAiOiIyMDIwLTExLTAyIDA3OjM2OjM5IFVUQyIsImlzX2d1ZXN0IjpmYWxzZSwiaWQiOjM2MTU1OTQsImVtYWlsIjoiYzEzNDEzOGUwNDc1QGppby1lbWJpYmUuY29tIn0.wC4cNu2D6LAWpWfWPPVL_ErT6X5kW4MfXNNiQqxQw3CbVl_eZHbaScYpXvOY93axd1HU14ITXEvObmHG5sE9Hg')
-        break
+        #break
         
 if __name__ == '__main__':
     df_negative_results = pd.DataFrame(columns=['Child_ID', 'Exam', 'Goal', "Grade",
