@@ -151,7 +151,7 @@ class Source(object):
                                  df["Subject"][ind], df["Subject_tagged"][ind], df["Learnpath_name"][ind],
                                  df["Learnmap_id"][ind], df["Chapter"][ind], videos, topics, prerequisite, test,
                                  practice.response_status_code1,response_status_code3,response_status_code2,response_status_code4,response_status_code5]
-        df1.to_csv("broken links.csv",index=False)
+            df1.to_csv("broken links.csv",index=False)
 
 
 def broken_link(df):
