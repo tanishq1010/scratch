@@ -150,7 +150,7 @@ class Source(object):
                                  df["Title"][ind], df["Type"][ind], df["Format_refrence"][ind], df["Section_name"][ind],
                                  df["Subject"][ind], df["Subject_tagged"][ind], df["Learnpath_name"][ind],
                                  df["Learnmap_id"][ind], df["Chapter"][ind], videos, topics, prerequisite, test,
-                                 practice.response_status_code1,response_status_code3,response_status_code2,response_status_code4,response_status_code5]
+                                 practice,response_status_code1,response_status_code3,response_status_code2,response_status_code4,response_status_code5]
             df1.to_csv("broken links.csv",index=False)
 
 
