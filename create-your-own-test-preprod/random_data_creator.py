@@ -90,7 +90,7 @@ class Source(object):
             payload2 = {
                 "exam_name": exam,
                 "learnt_embibe": "false",
-                "goal_name":goal
+                "goal_name":goal,
                 "namespace": "namespace",
                 "type": "chapter",
                 "version": "2.0"
