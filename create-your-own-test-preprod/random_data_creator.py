@@ -38,13 +38,21 @@ class Source(object):
         print(goal, exam)
         try:
             exam = exam.lower()
-            payload1 = {
-                "exam_name": exam,
-                "learnt_embibe": "false",
-                "namespace": "namespace",
-                "type": "subject",
-                "version": "2.0"
-            }
+            goal=goal.lower()
+            # payload1 = {
+            #     "exam_name": exam,
+            #     "learnt_embibe": "false",
+            #     "namespace": "namespace",
+            #     "type": "subject",
+            #     "version": "2.0"
+            # }
+            payload1={
+    "version": "2.0",
+    "type": "subject",
+    "namespace": "embibe",
+    "exam_name": exam,
+    "goal_name": goal
+}
 
             response1 = self.callAPI(
                 f"/fiber_ms/home/exam_config",
@@ -82,6 +90,7 @@ class Source(object):
             payload2 = {
                 "exam_name": exam,
                 "learnt_embibe": "false",
+                "goal_name":goal
                 "namespace": "namespace",
                 "type": "chapter",
                 "version": "2.0"
