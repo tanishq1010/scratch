@@ -226,6 +226,9 @@ def practice_taking(host, embibe_token, goal, exam):
 
     var = (summary_api_response.json())
     print(json.dumps(var))
+    df11 = pd.DataFrame(columns=['used'])
+    df11.loc[len(df11)]=[json.dumps(var)]
+    df11.to_csv('test.csv',index=False)
     os.system('rm -r jiofiberapiautomation/')
 
 
