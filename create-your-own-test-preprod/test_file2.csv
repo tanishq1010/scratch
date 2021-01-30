@@ -1,123 +1,42 @@
-Goal,Exam_name,Grade,Format_refrence,Exam_code,,,,,,,,,,,,,,,,,,,,,,,,,,NIACL Assistant Prelims,,,RRB NTPC CBT 1,,,RRC Group D CBT,,,SSC CGL Tier-I,,,SSC CHSL Tier-I,,,SSC MTS Tier I,,,CTET Paper 1,,,CTET Paper 2
-CBSE,1st CBSE,1,5ec5867a0c88fe5860961943,kve101929,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,2nd CBSE,2,5ec5867a0c88fe5860961943,kve98310,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,3rd CBSE,3,5ec5867a0c88fe5860961943,kve99124,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,4th CBSE,4,5ec5867a0c88fe5860961943,kve99693,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,5th CBSE,5,5ec5867a0c88fe5860961943,kve100841,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,6th CBSE,6,5ec5867a0c88fe5860961943,kve99562,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,7th CBSE,7,5ec5867a0c88fe5860961943,kve100245,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,8th CBSE,8,5ec5867a0c88fe5860961943,kve101426,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,9th CBSE,9,5ec5867a0c88fe5860961943,kve99731,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,10th CBSE,10,5ec5867a0c88fe5860961943,kve97915,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,11th CBSE,11,5ec5867a0c88fe5860961943,kve100513,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-CBSE,12th CBSE,12,5ec5867a0c88fe5860961943,kve97671,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,1st ICSE,1,5eef299c420f624a7cd798db,kve427066,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,2nd ICSE,2,5eef299c420f624a7cd798db,kve427180,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,3rd ICSE,3,5eef299c420f624a7cd798db,kve427316,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,4th ICSE,4,5eef299c420f624a7cd798db,kve369097,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,5th ICSE,5,5eef299c420f624a7cd798db,kve302817,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,6th ICSE,6,5eef299c420f624a7cd798db,kve368602,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,7th ICSE,7,5eef299c420f624a7cd798db,kve369226,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,8th ICSE,8,5eef299c420f624a7cd798db,kve302996,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,9th ICSE,9,5eef299c420f624a7cd798db,kve369394,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,10th ICSE,10,5eef299c420f624a7cd798db,kve265326,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,11th ICSE,11,5eef299c420f624a7cd798db,kve506211,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ICSE,12th ICSE,12,5eef299c420f624a7cd798db,kve506905,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,1st RBSE,1,5ef2ff88e52bc182d359b8f7,kve536600,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,2nd RBSE,2,5ef2ff88e52bc182d359b8f7,kve536738,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,3rd RBSE,3,5ef2ff88e52bc182d359b8f7,kve275617,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,4th RBSE,4,5ef2ff88e52bc182d359b8f7,kve275727,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,5th RBSE,5,5ef2ff88e52bc182d359b8f7,kve275956,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,6th RBSE,6,5ef2ff88e52bc182d359b8f7,kve271471,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,7th RBSE,7,5ef2ff88e52bc182d359b8f7,kve271673,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,8th RBSE,8,5ef2ff88e52bc182d359b8f7,kve271886,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,9th RBSE,9,5ef2ff88e52bc182d359b8f7,kve266641,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,10th RBSE,10,5ef2ff88e52bc182d359b8f7,kve266090,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,11th RBSE,11,5ef2ff88e52bc182d359b8f7,kve288918,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rajasthan Board,12th RBSE,12,5ef2ff88e52bc182d359b8f7,kve266892,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,1st Maharashtra Board,1,5ef30dcce52bc182d359ccfd,kve276168,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,3rd Maharashtra Board,3,5ef30dcce52bc182d359ccfd,kve273608,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,4th Maharashtra Board,4,5ef30dcce52bc182d359ccfd,kve273827,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,5th Maharashtra Board,5,5ef30dcce52bc182d359ccfd,kve274132,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,6th Maharashtra Board,6,5ef30dcce52bc182d359ccfd,kve273003,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,7th Maharashtra Board,7,5ef30dcce52bc182d359ccfd,kve272810,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,8th Maharashtra Board,8,5ef30dcce52bc182d359ccfd,kve272117,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,9th Maharashtra Board,9,5ef30dcce52bc182d359ccfd,kve272320,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,10th Maharashtra Board,10,5ef30dcce52bc182d359ccfd,kve266384,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,11th Maharashtra Board,11,5ef30dcce52bc182d359ccfd,kve289812,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,12th Maharashtra Board,12,5ef30dcce52bc182d359ccfd,kve290402,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Maharashtra Board,2nd Maharashtra Board,2,5ef30dcce52bc182d359ccfd,kve273512,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Engineering,BITSAT,PreUG,5f17102be61885046e5d9780,kve78735,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Engineering,AP EAMCET,PreUG,5ec5867f0c88fe5860961948,kve79107,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Engineering,VITEEE,PreUG,5f17102be61885046e5d9780,kve78745,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Engineering,JEE Main,PreUG,5f17102be61885046e5d9780,kve383631,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Engineering,MHT-CET,PreUG,5f17102be61885046e5d9780,kve109697,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Engineering,TS EAMCET,PreUG,5ec5867f0c88fe5860961948,kve79112,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Engineering,JEE Advanced,PreUG,5f17102be61885046e5d9780,kve431250,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Medical,AP EAMCET,PreUG,5f17177ee61885046e5db8d0,kve518075,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Medical,NEET,PreUG,5f17177ee61885046e5db8d0,kve385437,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Medical,TS EAMCET,PreUG,5f17177ee61885046e5db8d0,kve519118,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS PO Mains,PrePG,5ec586770c88fe586096193e,kve401024,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS RRB Officer Scale-I Prelims,PrePG,5ec586770c88fe586096193e,kve402680,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS SO Marketing Officer (Scale I) Prelims,PrePG,5ec586770c88fe586096193e,kve428821,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS Clerk Prelims,PrePG,5ec586770c88fe586096193e,kve401761,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS Clerk Mains,PrePG,5ec586770c88fe586096193e,kve401964,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS RRB Office Assistant Mains,PrePG,5ec586770c88fe586096193e,kve403312,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS RRB Office Assistant Prelims,PrePG,5ec586770c88fe586096193e,kve403162,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS PO Prelims,PrePG,5ec586770c88fe586096193e,kve400818,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,SBI PO Mains,PrePG,5ec586770c88fe586096193e,kve401509,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,IBPS RRB Officer Scale-I Mains,PrePG,5ec586770c88fe586096193e,kve402834,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,SBI Clerk Prelims,PrePG,5ec586770c88fe586096193e,kve402217,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,SBI Clerk Mains,PrePG,5ec586770c88fe586096193e,kve402423,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Banking,SBI PO Prelims,PrePG,5ec586770c88fe586096193e,kve401302,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Insurance,NIACL Assistant Prelims,PrePG,5f520569429ee9ee0e8c1b04,kve500671,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Insurance,LIC Assistant Prelims,PrePG,5f520569429ee9ee0e8c1b04,kve480856,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Insurance,Insurance,PrePG,5f520569429ee9ee0e8c1b04,kve455461,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Railways,RRC Group D CBT,PrePG,5f52048858ae126dab8a36cd,kve480524,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Railways,RRB NTPC CBT 1,PrePG,5f52048858ae126dab8a36cd,kve480193,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Railways,Railways,PrePG,5f52048858ae126dab8a36cd,kve454906,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SSC,SSC MTS Tier I,PrePG,5f5207e158ae126dab8a370e,kve501362,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SSC,SSC CHSL Tier-I,PrePG,5f5207e158ae126dab8a370e,kve479434,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SSC,SSC CGL Tier-I,PrePG,5f5207e158ae126dab8a370e,kve479076,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-SSC,SSC,PrePG,5f5207e158ae126dab8a370e,kve457847,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Teaching,CTET Paper 1,PrePG,5eb7ced0c20bf39d163d763c,kve64602,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Teaching,CTET Paper 2,PrePG,5eb7ced0c20bf39d163d763c,kve225492,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Defence,DRDO MTS Tier I,PrePG,5f5206b031562a10f6a592ff,kve500133,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Defence,CISF Head Constable,PrePG,5f5206b031562a10f6a592ff,kve481049,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Defence,Defence,PrePG,5f5206b031562a10f6a592ff,kve456852,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,1st Jammu and Kashmir Board,1,5faec359329f1db7f7a357f5,kve516620,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,2nd Jammu and Kashmir Board,2,5faec359329f1db7f7a357f5,kve516659,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,3rd Jammu and Kashmir Board,3,5faec359329f1db7f7a357f5,kve516704,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,4th Jammu and Kashmir Board,4,5faec359329f1db7f7a357f5,kve516845,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,5th Jammu and Kashmir Board,5,5faec359329f1db7f7a357f5,kve517000,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,6th Jammu and Kashmir Board,6,5faec359329f1db7f7a357f5,kve517132,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,7th Jammu and Kashmir Board,7,5faec359329f1db7f7a357f5,kve517311,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,8th Jammu and Kashmir Board,8,5faec359329f1db7f7a357f5,kve517533,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,9th Jammu and Kashmir Board,9,5faec359329f1db7f7a357f5,kve517740,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,10th Jammu and Kashmir Board,10,5faec359329f1db7f7a357f5,kve517905,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,11th Jammu and Kashmir Board,11,5faec359329f1db7f7a357f5,kve523155,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Jammu and Kashmir Board,12th Jammu and Kashmir Board,12,5faec359329f1db7f7a357f5,kve523738,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,1st Karnataka State Board,1,5f12c93e7f10acd6461e5080,kve371342,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,2nd Karnataka State Board,2,5f12c93e7f10acd6461e5080,kve371491,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,3rd Karnataka State Board,3,5f12c93e7f10acd6461e5080,kve371652,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,4th Karnataka State Board,4,5f12c93e7f10acd6461e5080,kve371836,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,5th Karnataka State Board,5,5f12c93e7f10acd6461e5080,kve372064,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,6th Karnataka State Board,6,5f12c93e7f10acd6461e5080,kve522358,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,7th Karnataka State Board,7,5f12c93e7f10acd6461e5080,kve522541,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,8th Karnataka State Board,8,5f12c93e7f10acd6461e5080,kve522754,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,9th Karnataka State Board,9,5f12c93e7f10acd6461e5080,kve522979,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,10th Karnataka State Board,10,5f12c93e7f10acd6461e5080,kve521046,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,11th Karnataka State Board,11,5f12c93e7f10acd6461e5080,kve521219,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Karnataka Board,12th Karnataka State Board,12,5f12c93e7f10acd6461e5080,kve521802,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,1st Telangana State Board,1,5f12c9997f10acd6461e50e9,kve372273,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,2nd Telangana State Board,2,5f12c9997f10acd6461e50e9,kve372331,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,3rd Telangana State Board,3,5f12c9997f10acd6461e50e9,kve372394,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,4th Telangana State Board,4,5f12c9997f10acd6461e50e9,kve372582,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,5th Telangana State Board,5,5f12c9997f10acd6461e50e9,kve372817,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,6th Telangana State Board,6,5f12c9997f10acd6461e50e9,kve373056,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,7th Telangana State Board,7,5f12c9997f10acd6461e50e9,kve373245,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,8th Telangana State Board,8,5f12c9997f10acd6461e50e9,kve373452,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,9th Telangana State Board,9,5f12c9997f10acd6461e50e9,kve373736,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,10th Telangana State Board,10,5f12c9997f10acd6461e50e9,kve374024,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,11th Telangana State Board,11,5f12c9997f10acd6461e50e9,kve527830,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Telangana Board,12th Telangana State Board,12,5f12c9997f10acd6461e50e9,kve528398,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Format_refrence,Stream,Display Goal,Display Exam,Goal,Exam_name,Grade,Final,Exam_supported,Exam_code
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,1st Tamil Nadu State Board,Tamil Nadu Board,1st Tamil Nadu State Board,1,NAN,No,kve348713
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,2nd Tamil Nadu State Board,Tamil Nadu Board,2nd Tamil Nadu State Board,2,NAN,No,kve348828
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,3rd Tamil Nadu State Board,Tamil Nadu Board,3rd Tamil Nadu State Board,3,NAN,No,kve348976
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,4th Tamil Nadu State Board,Tamil Nadu Board,4th Tamil Nadu State Board,4,NAN,No,kve357526
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,5th Tamil Nadu State Board,Tamil Nadu Board,5th Tamil Nadu State Board,5,NAN,No,kve357727
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,6th Tamil Nadu State Board,Tamil Nadu Board,6th Tamil Nadu State Board,6,NAN,No,kve328177
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,7th Tamil Nadu State Board,Tamil Nadu Board,7th Tamil Nadu State Board,7,NAN,No,kve328278
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,8th Tamil Nadu State Board,Tamil Nadu Board,8th Tamil Nadu State Board,8,NAN,No,kve328364
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,9th Tamil Nadu State Board,Tamil Nadu Board,9th Tamil Nadu State Board,9,NAN,No,kve328455
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,10th Tamil Nadu State Board,Tamil Nadu Board,10th Tamil Nadu State Board,10,NAN,No,kve328533
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,11th Tamil Nadu State Board,Tamil Nadu Board,11th Tamil Nadu State Board,11,NAN,No,kve369994
+5f0602449a10ea4cb3b91bbd,K12,Tamil Nadu Board,12th Tamil Nadu State Board,Tamil Nadu Board,12th Tamil Nadu State Board,12,NAN,No,kve370685
+5f17102be61885046e5d9780,PreUG,Engineering,VITEEE (with Biology),Engineering,VITEEE (with Biology),PreUG,NAN,No,kve634620
+5f17102be61885046e5d9780,PreUG,Engineering,KCET (UG),Engineering,KCET (UG),PreUG,NAN,No,kve646614
+5f17102be61885046e5d9780,PreUG,Engineering,SRMJEEE (UG),Engineering,SRMJEEE (UG),PreUG,NAN,No,kve646636
+5f17102be61885046e5d9780,PreUG,Engineering,BITSAT (with Biology),Engineering,BITSAT (with Biology),PreUG,NAN,No,kve635481
+5f17102be61885046e5d9780,PreUG,Engineering,AMU-AT (B.Tech.),Engineering,AMU-AT (B.Tech.),PreUG,NAN,No,kve646619
+5ec586770c88fe586096193e,PrePG,Banking,Bihar Cooperative Bank Assistant Prelims,Banking,Bihar Cooperative Bank Assistant Prelims,PrePG,NAN,No,kve600244
+5ec586770c88fe586096193e,PrePG,Banking,RBI Assistant Prelims,Banking,RBI Assistant Prelims,PrePG,NAN,No,kve599953
+5ec586810c88fe586096194c,PrePG,Insurance,LIC AAO Prelims,Insurance,LIC AAO Prelims,PrePG,NAN,No,kve600050
+5f52048858ae126dab8a36cd,PrePG,Railways,RPF Sub Inspector CBT 1,Railways,RPF Sub Inspector CBT 1,PrePG,NAN,No,kve501081
+5f52048858ae126dab8a36cd,PrePG,Railways,RPF Constable CBT 1,Railways,RPF Constable CBT 1,PrePG,NAN,No,kve500801
+5f5207e158ae126dab8a370e,PrePG,SSC,IB Security Assistant or Executive Tier 1,SSC,IB Security Assistant or Executive Tier 1,PrePG,NAN,No,kve642371
+5f5207e158ae126dab8a370e,PrePG,SSC,SSC Stenographer Grade C and D,SSC,SSC Stenographer Grade C and D,PrePG,NAN,No,kve598081
+5f5207e158ae126dab8a370e,PrePG,SSC,SSC CPO Paper-I,SSC,SSC CPO Paper-I,PrePG,NAN,No,kve501720
+5f5207e158ae126dab8a370e,PrePG,SSC,Delhi Police Constable CBT,SSC,Delhi Police Constable CBT,PrePG,NAN,No,kve479792
+5fce2026c240c4991ec5e96a,PrePG,National Recruitment Agency,NRA CET - Graduate Level,National Recruitment Agency,NRA CET - Graduate Level,PrePG,NAN,No,kve529567
+5fce2026c240c4991ec5e96a,PrePG,National Recruitment Agency,NRA CET - Higher Secondary Level,National Recruitment Agency,NRA CET - Higher Secondary Level,PrePG,NAN,No,kve613813
+5fce2026c240c4991ec5e96a,PrePG,National Recruitment Agency,NRA CET - Matriculation Level,National Recruitment Agency,NRA CET - Matriculation Level,PrePG,NAN,No,kve528944
+5ff410033bb906d8743ba6f0,K12,Kerala Board,1st Kerala Board,Kerala Board,1st Kerala Board,1,NAN,No,kve604547
+5ff410033bb906d8743ba6f0,K12,Kerala Board,2nd Kerala Board,Kerala Board,2nd Kerala Board,2,NAN,No,kve604580
+5ff410033bb906d8743ba6f0,K12,Kerala Board,3rd Kerala Board,Kerala Board,3rd Kerala Board,3,NAN,No,kve604614
+5ff410033bb906d8743ba6f0,K12,Kerala Board,4th Kerala Board,Kerala Board,4th Kerala Board,4,NAN,No,kve604724
+5ff410033bb906d8743ba6f0,K12,Kerala Board,5th Kerala Board,Kerala Board,5th Kerala Board,5,NAN,No,kve604834
+5ff410033bb906d8743ba6f0,K12,Kerala Board,6th Kerala Board,Kerala Board,6th Kerala Board,6,NAN,No,kve604950
+5ff410033bb906d8743ba6f0,K12,Kerala Board,7th Kerala Board,Kerala Board,7th Kerala Board,7,NAN,No,kve605043
+5ff410033bb906d8743ba6f0,K12,Kerala Board,8th Kerala Board,Kerala Board,8th Kerala Board,8,NAN,No,kve605164
+5ff410033bb906d8743ba6f0,K12,Kerala Board,9th Kerala Board,Kerala Board,9th Kerala Board,9,NAN,No,kve605324
+5ff410033bb906d8743ba6f0,K12,Kerala Board,10th Kerala Board,Kerala Board,10th Kerala Board,10,NAN,No,kve605484
+5ff410033bb906d8743ba6f0,K12,Kerala Board,11th Kerala Board,Kerala Board,11th Kerala Board,11,NAN,No,kve640549
+5ff410033bb906d8743ba6f0,K12,Kerala Board,12th Kerala Board,Kerala Board,12th Kerala Board,12,NAN,No,kve641117
