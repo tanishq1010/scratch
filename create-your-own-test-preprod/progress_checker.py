@@ -58,27 +58,23 @@ class Source(object):
             "resource_type": "test",
             "source": "fiber"
         }
-        response1 = API_call("https://preprodms.embibe.com/fiber_ms/v1/atg/progress",payload, "POST",'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoic3R1ZGVudCIsInRpbWVfc3RhbXAiOiIyMDIwLTExLTE3IDExOjM3OjM0IFVUQyIsImlzX2d1ZXN0IjpmYWxzZSwiaWQiOjM3MjE0MDQsImVtYWlsIjoiMzYxNTU5NF8xNjAyNzgzNzQ2QGVtYmliZS11c2VyLmNvbSJ9.xAKYAszvYPOTEWHzdTbfSROvr-mi5yxK28EpFceaWCvfYhMaawTce2vTMlaIGRTi48tLhzvQ__CgUgeN79vdnQ',0)
-
-        #ain(atg_id, difficulty, duration, exam_code, name, request_id)
-        
+        response1 = API_call("https://preprodms.embibe.com/fiber_ms/v1/atg/progress", payload, "POST",
+                             'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoic3R1ZGVudCIsInRpbWVfc3RhbXAiOiIyMDIwLTExLTE3IDExOjM3OjM0IFVUQyIsImlzX2d1ZXN0IjpmYWxzZSwiaWQiOjM3MjE0MDQsImVtYWlsIjoiMzYxNTU5NF8xNjAyNzgzNzQ2QGVtYmliZS11c2VyLmNvbSJ9.xAKYAszvYPOTEWHzdTbfSROvr-mi5yxK28EpFceaWCvfYhMaawTce2vTMlaIGRTi48tLhzvQ__CgUgeN79vdnQ',
+                             0)
         try:
+            # print(response1.json())
+            success = response1.json()['success']
+            progress = response1.json()['progress']
+            print(success, progress)
+            return success, progress
+        except Exception as e:
+            print(e)
+            print(traceback.format_exc())
+            print(response1.status_code)
+            success = response1.text
+            progress = response1.text
 
-
-                # print(response1.json())
-                success = response1.json()['success']
-                progress = response1.json()['progress']
-                print(success, progress)
-                return success, progress
-         except Exception as e:
-                print(e)
-                print(traceback.format_exc())
-                print(response1.status_code)
-                success = response1.text
-                progress = response1.text
-
-                return response1.text,response1.text
-
+            return response1.text, response1.text
 
         # break
 
@@ -89,16 +85,17 @@ def progress_check(df):
     # print(df[['Success']])
     for ind in df.index:
         print(df["Goal"][ind], df["Exam"][ind])
-        if df["Atg_id"][ind] == "ATG API FAILED" or df["Atg_id"][ind]=="EXAM CONFIG FAILED/EXAM CONFIGURATION FAILED":
+        if df["Atg_id"][ind] == "ATG API FAILED" or df["Atg_id"][ind] == "EXAM CONFIG FAILED/EXAM CONFIGURATION FAILED":
             # continue
-            df['Success'][ind]="False"
+            df['Success'][ind] = "False"
             df.to_csv('Create_test_data.csv', index=False)
         else:
-                success, progress = src.main(df['Atg_id'][ind], df['Difficulty'][ind], df['Time'][ind], df['Exam_code'][ind],
-                                             df['Name'][ind], df['Request_id'][ind])
-                df['Success'][ind] = success
-                df['Progress'][ind] = progress
-                df.to_csv('Create_test_data.csv', index=False)
+            success, progress = src.main(df['Atg_id'][ind], df['Difficulty'][ind], df['Time'][ind],
+                                         df['Exam_code'][ind],
+                                         df['Name'][ind], df['Request_id'][ind])
+            df['Success'][ind] = success
+            df['Progress'][ind] = progress
+            df.to_csv('Create_test_data.csv', index=False)
         # return progress
 
     # df.to_csv('Create_test_data.csv',index=False)
