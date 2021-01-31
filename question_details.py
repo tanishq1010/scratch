@@ -25,8 +25,8 @@ projection['content'] = 1
 df = pd.DataFrame(columns=['Question_code', 'Question_text', 'Exam', 'Subject', 'Unit', 'Chapter', 'learning maps'])
 print('calling cursor')
 cursor = collection.find(query, projection=projection)
-df111 = pd.DataFrame(list(cursor))
-df111.to_csv('mongo_data.csv', index=False)
+#df111 = pd.DataFrame(list(cursor))
+#df111.to_csv('mongo_data.csv', index=False)
 print(cursor)
 print('LOOP START')
 for doc in cursor:
