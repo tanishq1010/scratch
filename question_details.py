@@ -5,7 +5,7 @@ import openpyxl
 import traceback
 
 uri = "mongodb://ro_content:EHJpUwVO2vgMuk@10.141.11.78/?authSource=contentgrail&authMechanism=SCRAM-SHA-256"
-
+print('calling client')
 client = MongoClient(uri)
 database = client["contentgrail"]
 collection = database["learning_objects"]
@@ -23,6 +23,7 @@ projection['_id'] = 0
 projection['question_code'] = 1
 projection['content'] = 1
 df = pd.DataFrame(columns=['Question_code', 'Question_text', 'Exam', 'Subject', 'Unit', 'Chapter', 'learning maps'])
+print('calling cursor')
 cursor = collection.find(query, projection=projection)
 df111 = pd.DataFrame(list(cursor))
 df111.to_csv('mongo_data.csv', index=False)
