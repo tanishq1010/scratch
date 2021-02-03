@@ -61,6 +61,6 @@ for ind in df.index:
                 df1.loc[len(df1)] = [goal, exam, section_name, title, description, duration, thumbnail, currency, ID,
                                      subject]
 
-    break
+    #break
 df1.drop_duplicates(inplace=True)
 df1.to_csv('test.csv')
