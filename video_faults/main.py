@@ -25,42 +25,47 @@ for ind in df.index:
 
     # embibe_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJjb3VudHJ5IjoxLCJ1c2VyX3R5cGUiOjEsInBhcmVudF91c2VyX2lkIjoxNTAwMDA2MzQ0LCJjcmVhdGVkIjoxNjEyMjcwNTI0LCJvcmdhbml6YXRpb25faWQiOiIxIiwiaWQiOjE1MDAwMDYzNDUsImV4cCI6MTYxMzQ4MDEyNCwiZGV2aWNlSWQiOiIxNjExODU2NDMwMDY4IiwibW9iaWxlX3ZlcmlmaWNhdGlvbl9zdGF0dXMiOmZhbHNlLCJlbWFpbF92ZXJpZmljYXRpb25fc3RhdHVzIjpmYWxzZSwiZW1haWwiOiIxNTAwMDA2MzQ0XzE1Mjg5OTE3OTAwMzcxNDA0QGVtYmliZS11c2VyLmNvbSJ9.zaIn_Q18tJVGpoOxjPYQs1td1HRq_wamuhLOaZ0LxbwS5gSQGqkcKPaWCmZ-Drsm4a_p_-BpVH6_Vt_JSJe-eA'
     embibe_token=dictionary['embibe-token']
-    response = callAPI('POST', host, '/fiber_ms/v1/home/', embibe_token, json.dumps(payload))
-    for item in response.json():
-        if item['contentType'] == 'Video':
-            section_name = item['section_name']
-            for item in item['content']:
-                try:
-                    title = item['title']
-                except:
-                    title = None
-                try:
-                    description = item['description']
-                except:
-                    description = None
-                try:
-                    duration = item['length']
-                except:
-                    duration = None
-                try:
-                    ID = item['id']
-                except:
-                    ID = None
-                try:
-                    thumbnail = item['thumb']
-                except:
-                    thumbnail = None
-                try:
-                    currency = item['currency']
-                except:
-                    currency = None
-                try:
-                    subject = item['subject']
-                except:
-                    subject = None
-                df1.loc[len(df1)] = [goal, exam, section_name, title, description, duration, thumbnail, currency, ID,
-                                     subject]
+    try:
+        response = callAPI('POST', host, '/fiber_ms/v1/home/', embibe_token, json.dumps(payload))
+        for item in response.json():
+            if item['contentType'] == 'Video':
+                section_name = item['section_name']
+                for item in item['content']:
+                    try:
+                        title = item['title']
+                    except:
+                        title = None
+                    try:
+                        description = item['description']
+                    except:
+                        description = None
+                    try:
+                        duration = item['length']
+                    except:
+                        duration = None
+                    try:
+                        ID = item['id']
+                    except:
+                        ID = None
+                    try:
+                        thumbnail = item['thumb']
+                    except:
+                        thumbnail = None
+                    try:
+                        currency = item['currency']
+                    except:
+                        currency = None
+                    try:
+                        subject = item['subject']
+                    except:
+                        subject = None
+                    df1.loc[len(df1)] = [goal, exam, section_name, title, description, duration, thumbnail, currency, ID,
+                                         subject]
+    except:
+        df1.loc[len(df1)] = [goal, exam,'', '', '', '', '', '', '',
+                             response.text]
 
-    #break
+
+    # break
 df1.drop_duplicates(inplace=True)
 df1.to_csv('test.csv')
