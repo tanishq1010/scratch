@@ -50,7 +50,12 @@ class Source(object):
             "grade": grade,
             "fetch_all_content": "true"
         }
-        home_data={'CBSE':'5ec5867a0c88fe5860961943','Engineering':'5f17102be61885046e5d9780','Banking':'5ec586770c88fe586096193e','Medical':'5f17177ee61885046e5db8d0','Insurance':'5f520569429ee9ee0e8c1b04','Defence':'5f5206b031562a10f6a592ff','SSC':'5f5207e158ae126dab8a370e','Railways':'5f52048858ae126dab8a36cd','Teaching':'5eb7ced0c20bf39d163d763c'}
+        home_data = {'CBSE':'5ec5867a0c88fe5860961943','Jammu and Kashmir Board':'5faec359329f1db7f7a357f5','ICSE':'5eef299c420f624a7cd798db',
+    'Maharashtra Board':'5ef30dcce52bc182d359ccfd','Karnataka Board':'5f12c93e7f10acd6461e5080','Telangana Board':'5f12c9997f10acd6461e50e9',
+    'Rajasthan Board':'5ef2ff88e52bc182d359b8f7','Engineering':'5f17102be61885046e5d9780','Medical':'5f17177ee61885046e5db8d0',
+            'Banking':'5ec586770c88fe586096193e','Insurance':'5f520569429ee9ee0e8c1b04','Railways':'5f52048858ae126dab8a36cd',
+            'SSC':'5f5207e158ae126dab8a370e','Teaching':'5eb7ced0c20bf39d163d763c','Defence':'5f5206b031562a10f6a592ff','Tamil Nadu Board':'5f0602449a10ea4cb3b91bbd','National Recruitment Agency':'5fce2026c240c4991ec5e96a','Kerala Board':'5ff410033bb906d8743ba6f0'}
+        # home_data={'CBSE':'5ec5867a0c88fe5860961943','Engineering':'5f17102be61885046e5d9780','Banking':'5ec586770c88fe586096193e','Medical':'5f17177ee61885046e5db8d0','Insurance':'5f520569429ee9ee0e8c1b04','Defence':'5f5206b031562a10f6a592ff','SSC':'5f5207e158ae126dab8a370e','Railways':'5f52048858ae126dab8a36cd','Teaching':'5eb7ced0c20bf39d163d763c'}
         
 
         response1 = self.callAPI(
