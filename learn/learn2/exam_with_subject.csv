@@ -1,0 +1,125 @@
+goal,exam,subject,correct sequence present
+CBSE,6th CBSE,Science,yes
+CBSE,6th CBSE,Mathematics,yes
+CBSE,7th CBSE,Science,yes
+CBSE,7th CBSE,Mathematics,yes
+CBSE,8th CBSE,Science,yes
+CBSE,8th CBSE,Mathematics,yes
+CBSE,9th CBSE,Science,yes
+CBSE,9th CBSE,Mathematics,yes
+CBSE,10th CBSE,Science,yes
+CBSE,10th CBSE,Mathematics,yes
+CBSE,11th CBSE,Physics,yes
+CBSE,11th CBSE,Chemistry,yes
+CBSE,11th CBSE,Mathematics,yes
+CBSE,11th CBSE,Biology,no
+CBSE,12th CBSE,Physics,yes
+CBSE,12th CBSE,Chemistry,yes
+CBSE,12th CBSE,Mathematics,yes
+CBSE,12th CBSE,Biology,yes
+Engineering,JEE Main,Physics,yes
+Engineering,JEE Main,Chemistry,yes
+Engineering,JEE Main,Mathematics,yes
+Engineering,JEE Advanced,Physics,yes
+Engineering,JEE Advanced,Chemistry,yes
+Engineering,JEE Advanced,Mathematics,yes
+Medical,NEET,Physics,yes
+Medical,NEET,Chemistry,yes
+Medical,NEET,Biology,yes
+Banking,IBPS Clerk Prelims,Quantitative Aptitude,no
+Banking,IBPS Clerk Prelims,Reasoning,no
+Banking,IBPS Clerk Prelims,English Language,yes
+Banking,IBPS Clerk Mains,Quantitative Aptitude,no
+Banking,IBPS Clerk Mains,Reasoning,no
+Banking,IBPS Clerk Mains,English Language,yes
+Banking,IBPS Clerk Mains,General Awareness,no
+Banking,IBPS PO Prelims,Quantitative Aptitude,no
+Banking,IBPS PO Prelims,Reasoning,no
+Banking,IBPS PO Prelims,English Language,yes
+Banking,IBPS PO Mains,Quantitative Aptitude,no
+Banking,IBPS PO Mains,Reasoning,no
+Banking,IBPS PO Mains,English Language,yes
+Banking,IBPS PO Mains,General Awareness,no
+Banking,IBPS RRB Office Assistant Prelims,Quantitative Aptitude,no
+Banking,IBPS RRB Office Assistant Prelims,Reasoning,no
+Banking,IBPS RRB Office Assistant Mains,Quantitative Aptitude,no
+Banking,IBPS RRB Office Assistant Mains,Reasoning,no
+Banking,IBPS RRB Office Assistant Mains,English Language,yes
+Banking,IBPS RRB Office Assistant Mains,General Awareness,no
+Banking,IBPS RRB Office Assistant Mains,हिंदी,yes
+Banking,IBPS RRB Officer Scale-1 Prelims,Quantitative Aptitude,yes
+Banking,IBPS RRB Officer Scale-1 Prelims,Reasoning,yes
+Banking,IBPS RRB Officer Scale-1 Mains,Quantitative Aptitude,yes
+Banking,IBPS RRB Officer Scale-1 Mains,Reasoning,yes
+Banking,IBPS RRB Officer Scale-1 Mains,English Language,yes
+Banking,IBPS RRB Officer Scale-1 Mains,General Awareness,yes
+Banking,IBPS RRB Officer Scale-1 Mains,हिंदी,yes
+Banking,SBI Clerk Prelims,Quantitative Aptitude,no
+Banking,SBI Clerk Prelims,Reasoning,no
+Banking,SBI Clerk Prelims,English Language,yes
+Banking,SBI Clerk Mains,Quantitative Aptitude,no
+Banking,SBI Clerk Mains,Reasoning,no
+Banking,SBI Clerk Mains,English Language,yes
+Banking,SBI Clerk Mains,General Awareness,no
+Banking,SBI PO Prelims,Quantitative Aptitude,no
+Banking,SBI PO Prelims,Reasoning,no
+Banking,SBI PO Prelims,English Language,yes
+Banking,SBI PO Mains,Quantitative Aptitude,no
+Banking,SBI PO Mains,Reasoning,no
+Banking,SBI PO Mains,English Language,yes
+Banking,SBI PO Mains,General Awareness,no
+SSC,SSC,Agriculture & Rural Development,yes
+SSC,SSC,Commerce & Accountancy,yes
+SSC,SSC,Companies Act and Economics,yes
+SSC,SSC,Computer Knowledge,yes
+SSC,SSC,Economic and Social Issues,yes
+SSC,SSC,English Language,yes
+SSC,SSC,Finance,yes
+SSC,SSC,Finance and Management,yes
+SSC,SSC,General Awareness,no
+SSC,SSC,Quantitative Aptitude,yes
+SSC,SSC,Reasoning,no
+SSC,SSC,हिंदी,yes
+Teaching,CTET Paper 1,Child Development & Pedagogy,yes
+Teaching,CTET Paper 1,English,yes
+Teaching,CTET Paper 1,Environmental Studies & Pedagogy,yes
+Teaching,CTET Paper 1,Mathematics,yes
+Teaching,CTET Paper 1,हिंदी,yes
+Teaching,CTET Paper 2,Child Development & Pedagogy,yes
+Teaching,CTET Paper 2,English,yes
+Teaching,CTET Paper 2,Mathematics,yes
+Teaching,CTET Paper 2,Science & Pedagogy,yes
+Teaching,CTET Paper 2,Social Science,yes
+Teaching,CTET Paper 2,हिंदी,yes
+Railways,Railways,Computer Knowledge,yes
+Railways,Railways,Economic and Social Issues,yes
+Railways,Railways,General Awareness,yes
+Railways,Railways,Quantitative Aptitude,yes
+Railways,Railways,Reasoning,no
+Insurance,Insurance,Agriculture & Rural Development,yes
+Insurance,Insurance,Commerce & Accountancy,yes
+Insurance,Insurance,Companies Act and Economics,yes
+Insurance,Insurance,Computer Knowledge,yes
+Insurance,Insurance,Costing,yes
+Insurance,Insurance,Economic and Social Issues,yes
+Insurance,Insurance,English Language,yes
+Insurance,Insurance,Finance,yes
+Insurance,Insurance,Finance and Management,yes
+Insurance,Insurance,General Awareness,yes
+Insurance,Insurance,Human Resource Management,yes
+Insurance,Insurance,Information Technology,yes
+Insurance,Insurance,Law,yes
+Insurance,Insurance,Management,yes
+Insurance,Insurance,Marketing,yes
+Insurance,Insurance,Quantitative Aptitude,yes
+Insurance,Insurance,Reasoning,no
+Defence,Defence,Agriculture & Rural Development,yes
+Defence,Defence,Computer Knowledge,yes
+Defence,Defence,Economic and Social Issues,yes
+Defence,Defence,English Language,yes
+Defence,Defence,Finance,yes
+Defence,Defence,Finance and Management,yes
+Defence,Defence,General Awareness,yes
+Defence,Defence,Quantitative Aptitude,yes
+Defence,Defence,Reasoning,no
+Defence,Defence,हिंदी,yes
