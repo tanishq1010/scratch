@@ -102,7 +102,7 @@ def subject_data(child_id, board, grade, exam, goal, embibe_token, subject, df, 
                         video_url = 'Yes'
                     else:
                         video_url = 'No'
-                    if description != '' and description != 'KEY NOT AVAILABLE' and len(description) >= 150:
+                    if description != '' and description != 'KEY NOT AVAILABLE' and len(description) <= 150:
                         description = 'Yes'
                     else:
                         description = 'No'
@@ -254,7 +254,7 @@ def home_data(child_id, board, grade, exam, goal, embibe_token, host):
                         video_url = 'Yes'
                     else:
                         video_url = 'No'
-                    if description != '' and description != 'KEY NOT AVAILABLE' and len(description) >= 150:
+                    if description != '' and description != 'KEY NOT AVAILABLE' and len(description) <= 150:
                         description = 'Yes'
                     else:
                         description = 'No'
@@ -342,7 +342,9 @@ def for_all_exam_goal(goal_exam_grade, host):
             print(e)
             print(print(goal_exam_grade["Goal"][ind], goal_exam_grade["Exam_name"][ind]))
             print("ABOVE GOAL EXAM GAVE ERROR")
-       
+        # i += 1
+        # if i > 6:
+        #     break
 
 
 if __name__ == '__main__':
