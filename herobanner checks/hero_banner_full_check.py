@@ -36,7 +36,7 @@ def subject_data(child_id, board, grade, exam, goal, embibe_token, subject, df, 
         "fetch_all_content": True
     }
     response1 = callAPI('POST', host, f"/fiber_ms/v1/home/{subject}", embibe_token, json.dumps(payload))
-
+    flag = 0
     for item in response1.json():
         if item["content_section_type"] == "HEROBANNER":
             flag = 1
@@ -148,9 +148,14 @@ def subject_data(child_id, board, grade, exam, goal, embibe_token, subject, df, 
                                        subject_tagged, is_subject_tagged_correct, ID, duration_in_cg, duration_display,
                                        expected_duration_display, is_duration_okay, embium_coins, title, description,
                                        image_url, video_url, teaser_url, status, title1, description1, learnpath1]
-        if flag == 1:
-            break
+
     # print(df)
+    if flag == 0:
+        df.loc[len(df)] = [f"Learn/home/{subject}", goal, exam, 'HEROBANNER NOT FOUND', '', subject,
+                           '', '', '', '', '',
+                           '', '', '', '', '',
+                           '', '', '', '', '', '', '']
+
     df.to_csv('Herobanner_check.csv', index=False)
 
 
@@ -183,7 +188,7 @@ def home_data(child_id, board, grade, exam, goal, embibe_token, host):
 
     except Exception as e:
         print(e)
-
+    flag = 0
     for item in response1.json():
         if item["content_section_type"] == "HEROBANNER":
             flag = 1
@@ -297,8 +302,12 @@ def home_data(child_id, board, grade, exam, goal, embibe_token, host):
                                        expected_duration_display, is_duration_okay, embium_coins, title, description,
                                        image_url, video_url, teaser_url, status, title1, description1, learnpath1]
         # print(df)
-        if flag == 1:
-            break
+    if flag == 0:
+        if flag == 0:
+            df.loc[len(df)] = [f"Learn/home", goal, exam, 'HEROBANNER NOT FOUND', 'All Subject', '',
+                               '', '', '', '', '',
+                               '', '', '', '', '',
+                               '', '', '', '', '', '', '']
 
     try:
         for item in response1.json():
@@ -333,9 +342,7 @@ def for_all_exam_goal(goal_exam_grade, host):
             print(e)
             print(print(goal_exam_grade["Goal"][ind], goal_exam_grade["Exam_name"][ind]))
             print("ABOVE GOAL EXAM GAVE ERROR")
-        # i += 1
-        # if i > 6:
-        #     break
+       
 
 
 if __name__ == '__main__':
@@ -344,7 +351,7 @@ if __name__ == '__main__':
         columns=['Screen', 'Goal', 'Exam', 'Exam_tagged', 'Is_exam_tagged_correct', 'Subject', 'Subject_tagged',
                  'Is_subject_tagged_correct', 'Video_id', 'Duration_given', 'Duration_display',
                  'Expected_duration_display', 'Is_duration_okay', 'Embium_coins', 'Is_title_present',
-                 'Is_description_greater_than_150_character_range', 'Image_url_present', 'Video_url_present',
+                 'Is_description_less_150_character_range', 'Image_url_present', 'Video_url_present',
                  'Teaser_url_present', 'Status', 'Title', 'Description', 'Learn_path'])
     df_herobanner.to_csv("Herobanner_check.csv", index=False)
     goal_exam_grade = pd.read_csv('test_file2.csv')
