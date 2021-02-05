@@ -83,7 +83,7 @@ def subject_data(child_id, board, grade, exam, goal, embibe_token, subject, df, 
                     else:
                         teaser_url = 'No'
 
-                    df_new = df1.loc[df1['Book Id'] == ID]
+                    df_new = df1.loc[df1['Book Id'].str.lower() == ID.lower()]
                     df_new = df_new.loc[df_new['Exam'] == exam]
                     if len(df_new) > 0:
                         tagged_exam = exam
@@ -228,7 +228,7 @@ def home_data(child_id, board, grade, exam, goal, embibe_token, host):
                     else:
                         teaser_url = 'No'
 
-                    df_new = df1.loc[df1['Book Id'] == ID]
+                    df_new = df1.loc[df1['Book Id'].str.lower() == ID.lower()]
                     df_new = df_new.loc[df_new['Exam'] == exam]
                     if len(df_new) > 0:
                         tagged_exam = exam
