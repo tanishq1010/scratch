@@ -300,7 +300,7 @@ def for_all_exam_goal(goal_exam_grade, host):
     i = 0
     for ind in goal_exam_grade.index:
         # print(goal_exam_grade["Goal"][ind])
-        if goal_exam_grade["Goal"][ind] == 'Telangana Board':
+        #if goal_exam_grade["Goal"][ind] == 'Telangana Board':
 
             print(goal_exam_grade["Goal"][ind], goal_exam_grade["Exam_name"][ind])
 
@@ -312,8 +312,8 @@ def for_all_exam_goal(goal_exam_grade, host):
                 print(e)
                 print(print(goal_exam_grade["Goal"][ind], goal_exam_grade["Exam_name"][ind]))
                 print("ABOVE GOAL EXAM GAVE ERROR")
-        else:
-            continue
+        #else:
+            #continue
         # i += 1
         # if i > 2:
         #     break
