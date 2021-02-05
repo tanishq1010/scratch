@@ -47,7 +47,7 @@ def get_all_books(cg_db, valid_goals_list, valid_exams_list):
                     'Exam Wise Rank': rank
                 }
 
-                book_doc["Book Id"] = book.get("path", "Na")
+                book_doc["Book Id"] = str(book.get("path", "Na")).lower()
                 if 'subjects' in book['locales']['en']['content']:
                     book_doc['Subject'] = book['locales']['en']['content']['subjects']
                 else:
