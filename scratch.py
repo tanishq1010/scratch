@@ -39,4 +39,4 @@ df = pd.DataFrame(list(cursor))
 # 
 #     except:
 #         print(traceback.format_exc())
-df.to_excel('question_details.xlsx', index=False)
+df.to_csv('question_details.csv', index=False)
