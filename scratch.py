@@ -27,15 +27,16 @@ cursor = collection.find(query, projection=projection)
 
 print(cursor)
 print('LOOP START')
-for doc in cursor:
-
-    try:
-        status = doc['status']
-        question_code = doc['id']
-        # print(status,question_code)
-
-        df.loc[len(df)] = [status, question_code]
-
-    except:
-        print(traceback.format_exc())
+df1 = pd.DataFrame(list(cursor))
+# for doc in cursor:
+# 
+#     try:
+#         status = doc['status']
+#         question_code = doc['id']
+#         # print(status,question_code)
+# 
+#         df.loc[len(df)] = [status, question_code]
+# 
+#     except:
+#         print(traceback.format_exc())
 df.to_csv('question_details.csv', index=False)
