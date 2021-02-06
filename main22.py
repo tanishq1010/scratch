@@ -16,7 +16,7 @@ projection = {}
 projection["_id"] = 0
 projection["questions.normal_questions"] = 1.0
 
-cursor = collection.find(query, projection=projection).limit(100)
+cursor = collection.find(query, projection=projection)
 
 LIST_app = []
 for doc in cursor:
