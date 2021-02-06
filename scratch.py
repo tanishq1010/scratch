@@ -27,7 +27,7 @@ cursor = collection.find(query, projection=projection)
 
 print(cursor)
 print('LOOP START')
-df1 = pd.DataFrame(list(cursor))
+df = pd.DataFrame(list(cursor))
 # for doc in cursor:
 # 
 #     try:
@@ -39,4 +39,4 @@ df1 = pd.DataFrame(list(cursor))
 # 
 #     except:
 #         print(traceback.format_exc())
-df.to_csv('question_details.csv', index=False)
+df.to_excel('question_details.xlsx', index=False)
