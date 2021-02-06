@@ -11,5 +11,5 @@ for ind in df1.index:
         df1['Present in CG in published state'][ind] = 'Yes'
     else:
         df1['Present in CG in published state'][ind] = 'No'
-    break
+   
 df1.to_csv('OT_MB_questions_status_in_CG.csv',index=False)
