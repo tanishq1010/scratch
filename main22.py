@@ -17,21 +17,17 @@ projection["_id"] = 0
 projection["questions.normal_questions"] = 1.0
 
 cursor = collection.find(query, projection=projection)
-var = list(cursor)
-#print(var)
-
+# print(cursor)
 var = list(cursor)
 # print(var)
 LIST_app = []
 for doc in var:
     try:
         LIST = doc['questions']['normal_questions']
-        # print(LIST)
         LIST_app = LIST_app + LIST
     except:
         print(traceback.format_exc())
 
 df = pd.DataFrame(data=LIST_app, columns=['id'])
-
+print(df)
 df.to_csv('mongo_data.csv', index=False)
-
