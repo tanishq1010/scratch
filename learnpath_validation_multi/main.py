@@ -78,9 +78,7 @@ for ind in df.index:
     p.start()
     i += 1
     j += 1
-    print(j)
-    if i ==2000:
-        print('2000')
+    print(i)
     if i > 30000:
         print('BREAKING')
         break
