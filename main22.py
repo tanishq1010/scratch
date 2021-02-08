@@ -17,16 +17,18 @@ projection["_id"] = 0
 projection["questions.normal_questions"] = 1.0
 
 cursor = collection.find(query, projection=projection)
+var = list(cursor)
+print(var)
 
-LIST_app = []
-for doc in cursor:
-    try:
-        LIST = doc['questions']['normal_questions']
-        LIST_app = LIST_app + LIST
-    except:
-        print(traceback.format_exc())
+#LIST_app = []
+#for doc in cursor:
+#    try:
+#        LIST = doc['questions']['normal_questions']
+#        LIST_app = LIST_app + LIST
+#    except:
+#        print(traceback.format_exc())
 
-df = pd.DataFrame(data=LIST_app, columns=['id'])
+#df = pd.DataFrame(data=LIST_app, columns=['id'])
 
 
-df.to_csv('mongo_data.csv', index=False)
+#df.to_csv('mongo_data.csv', index=False)
