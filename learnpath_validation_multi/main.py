@@ -69,14 +69,25 @@ def function(var):
 
 processes = []
 i = 0
+j = 0
 for ind in df.index:
-    time.sleep(0.2)
+    time.sleep(0.1)
     var = df['_id'][ind]
     p = multiprocessing.Process(target=function, args=(var,))
     processes.append(p)
     p.start()
     i += 1
+    j += 1
+    print(j)
+    if i ==2000:
+        print('2000')
     if i > 30000:
+        print('BREAKING')
         break
-for process in processes:
-    process.join()
+    if j >= 200:
+        j = 0
+        for process in processes:
+            process.join()
+        processes = []
+# for process in processes:
+#     process.join()
