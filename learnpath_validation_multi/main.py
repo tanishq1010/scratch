@@ -76,7 +76,7 @@ for ind in df.index:
     processes.append(p)
     p.start()
     i += 1
-    if i > 100:
+    if i > 30000:
         break
 for process in processes:
     process.join()
