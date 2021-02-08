@@ -4,6 +4,7 @@ import traceback
 import os
 import sys
 import multiprocessing
+import time
 
 # from get_valid_goal_exams import *
 
@@ -14,8 +15,9 @@ def function(var):
     df1 = pd.DataFrame(
         columns=['ObjectId', 'Display_learnpath_name', 'Learnpath_name', 'Do_learnpaths_match', 'Question_code'])
     i = 0
+    var11 = var
     # for ind in df.index:
-    object_id = var
+    object_id = var11
     # print(object_id)
     url = f"/learning_objects/{object_id}?embed=true&next_status=true"
     response = callAPI('GET', 'https://knowledge-blue.embibe.com', url,
@@ -55,25 +57,26 @@ def function(var):
                 df1.loc[len(df1)] = [object_id, 'question_meta_tags key missing', 'Na', 'Na', question_code]
     except:
         print(traceback.format_exc())
-        df1.loc[len(df1)] = [object_id, response.text, 'Na', 'Na', 'Na']
+        df1.loc[len(df1)] = [object_id, response.status_code, 'Na', 'Na', 'Na']
     # i += 1
     # if i > 4:
     #     break
     df1 = df1.loc[df1['Do_learnpaths_match'].str.contains('No')]
-    print(df1)
-
-    df1.to_csv(f"Results/{var}testing.csv", index=False)
+    # print(df1)
+    if len(df1) > 0:
+        df1.to_csv(f"Results/{var11}testing.csv", index=False)
 
 
 processes = []
-i=0
+i = 0
 for ind in df.index:
+    time.sleep(0.2)
     var = df['_id'][ind]
-    p = multiprocessing.Process(target=function(), args=(var,))
+    p = multiprocessing.Process(target=function, args=(var,))
     processes.append(p)
     p.start()
-    i+=1
-    if i>100:
+    i += 1
+    if i > 100:
         break
 for process in processes:
     process.join()
