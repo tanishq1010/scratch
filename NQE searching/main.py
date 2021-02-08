@@ -39,9 +39,7 @@ for ind in df2.index:
         df2['Present in NQE'][ind] = 'Yes'
     else:
         df2['Present in NQE'][ind] = 'No'
-    i += 1
-    if i > 100:
-        break
+  
 df2.to_csv('testing.csv',index=False)
 
 
