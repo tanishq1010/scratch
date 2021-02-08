@@ -8,7 +8,7 @@ df1 = pd.DataFrame(
 i = 0
 for ind in df.index:
     object_id = df['_id'][ind]
-    print(object_id)
+    #print(object_id)
     url = f"/learning_objects/{object_id}?embed=true&next_status=true"
     response = callAPI('GET', 'https://knowledge-blue.embibe.com', url,
                        'a3e65d48-1c51-4191-96fb-1ee2d07d47da:7e02ba0f3c16a3f5231c51a42ffa76b84cf18480f74a02ca4c43ceb85b6ea8ba1f27564951cc70d49033d96334cdde23674939f05175339680ce3baabcb51ffd',
