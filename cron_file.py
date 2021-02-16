@@ -202,11 +202,13 @@ class Main(object):
             try:
                 now = datetime.now()
                 if now.hour == int(sch.split(':')[0]) and now.minute == int(sch.split(':')[1]):
+                    print('Starting process...')
                     # project.server.run('sudo rm -r ' + project.constants.directory)
                     # time.sleep(3)
                     project.server.run(project.constants.repository)
                     time.sleep(3)
                     self.runServer()
+                    print('Exiting process...')
                 time.sleep(30)
             except Exception as e:
                 print(e)
