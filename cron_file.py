@@ -19,7 +19,7 @@ class Constants(object):
         self._command = 'python3 question_errors_cg_learning_objects_versions.py'
         self._filename = ['Results2/results.csv']
         self._from_address = 'automation-ui@embibe.com'
-        self._to_address = ['abhinav.kumar@embibe.com,harpreet.consultant@embibe.com']
+        self._to_address = ['tanishq.rohela@embibe.com','harpreet.consultant@embibe.com']
         self._email_subject = "UAT Dump"
         self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for JIO Fiber Learn Regression at time - {}</p></p>"
         self._email_password = "Embibe@333"
