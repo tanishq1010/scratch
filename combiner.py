@@ -12,3 +12,6 @@ print(list_of_files)
 
 file_out = "ConsolidateOutput.xlsx"
 produceOneCSV(list_of_files, file_out)
+df=pd.read_excel('ConsolidateOutput.xlsx')
+df.drop_duplicates(inplace=True)
+df.to_csv('output.csv',index=False)
