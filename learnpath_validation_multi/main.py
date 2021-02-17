@@ -8,7 +8,7 @@ import time
 
 # from get_valid_goal_exams import *
 
-df = pd.read_csv('mongo_data.csv')
+df = pd.read_csv('mongo_data1.csv')
 
 
 def function(var):
@@ -64,7 +64,7 @@ def function(var):
     df1 = df1.loc[df1['Do_learnpaths_match'].str.contains('No')]
     # print(df1)
     if len(df1) > 0:
-        df1.to_csv(f"Results/{var11}testing.csv", index=False)
+        df1.to_csv(f"Results/{var11}testing.xlsx", index=False)
 
 
 processes = []
@@ -79,7 +79,7 @@ for ind in df.index:
     i += 1
     j += 1
     
-    if i % 5000:
+    if i % 5000==0:
         print(i)
         
     if j >= 500:
