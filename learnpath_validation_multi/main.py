@@ -71,7 +71,7 @@ processes = []
 i = 0
 j = 0
 for ind in df.index:
-    time.sleep(0.1)
+    #time.sleep(0.1)
     var = df['_id'][ind]
     p = multiprocessing.Process(target=function, args=(var,))
     processes.append(p)
