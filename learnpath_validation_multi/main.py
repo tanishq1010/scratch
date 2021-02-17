@@ -64,7 +64,7 @@ def function(var):
     df1 = df1.loc[df1['Do_learnpaths_match'].str.contains('No')]
     # print(df1)
     if len(df1) > 0:
-        df1.to_csv(f"Results/{var11}testing.xlsx", index=False)
+        df1.to_excel(f"Results/{var11}testing.xlsx", index=False)
 
 
 processes = []
