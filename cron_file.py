@@ -20,8 +20,8 @@ class Constants(object):
         self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "All Exams" "All Goals"'
         self._filename = ''
         self._from_address = 'automation-ui@embibe.com'
-        self._to_address = ['tanishq.rohela@embibe.com']
-        self._email_subject = "UAT Dump"
+        self._to_address = ['tanishq.rohela@embibe.com','automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','raju@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com']
+        self._email_subject = "Automated Regression Suite for All Goals & Exams - Fiberdemo Environment"
         self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for "+self._email_subject+"</p><p>{}</p</p>"
         self._email_password = "Embibe@333"
 
