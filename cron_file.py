@@ -5,6 +5,7 @@ import smtplib
 import pytz
 from datetime import datetime
 import os
+import glob
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
@@ -17,7 +18,7 @@ class Constants(object):
         self._repository = 'git clone git@bitbucket.org:ajayranwaembibe/fiber_checklist.git'
         self._directory = 'fiber_checklist/'
         self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "6th CBSE" "CBSE"'
-        self._filename = os.listdir(self._directory+'Results/*.csv')
+        self._filename = ''
         self._from_address = 'automation-ui@embibe.com'
         self._to_address = ['tanishq.rohela@embibe.com']
         self._email_subject = "UAT Dump"
@@ -117,14 +118,7 @@ class Email(object):
                 p.add_header('Content-Disposition', "attachment; filename= %s" % file)
                 msg.attach(p)
         else:
-            err = open(self._directory + 'txtfile.txt', 'r').read()
-            email_body += '<p>The cron did not attach any output. The following error came while executing - "{}"</p>'.format(
-                err)
-            p = MIMEBase('application', 'octet-stream')
-            p.set_payload(err)
-            encoders.encode_base64(p)
-            p.add_header('Content-Disposition', "attachment; filename= %s" % 'txtfile.txt')
-            msg.attach(p)
+            print('size exceeded 25MB.')
 
         msg.attach(MIMEText(email_body, 'html'))
         s = smtplib.SMTP('smtp.gmail.com', 587)
@@ -175,7 +169,7 @@ class Main(object):
             data = f.read()
         return data
 
-    def getDescription(dir):
+    def getDescription(self, dir):
         try:
             data = open(dir+'description.html','r').read()
             return data
@@ -195,25 +189,26 @@ class Main(object):
         datetime_ist = datetime.now(IST)
         e_sub = project.constants.email_subject  # .format(str(datetime_ist).split('.')[0])
         e_body = project.constants.email_body.format(self.getDescription(project.constants.directory))
-        e_file = project.constants.filename
+        e_file = glob.glob(project.constants.directory+'Results/*.csv')
+        print(e_file)
         project.email.directory = project.constants.directory
         time.sleep(5)
         project.email.sendemail(e_from, e_pass, e_sub, e_body, e_file)
 
-    def schedule(self, sch):
+    def schedule(self): #, sch):
         project = self._project
         while True:
             try:
-                now = datetime.now()
-                if now.hour == int(sch.split(':')[0]) and now.minute == int(sch.split(':')[1]):
-                    print('Starting process...')
-                    # project.server.run('sudo rm -r ' + project.constants.directory)
-                    # time.sleep(3)
-                    project.server.run(project.constants.repository)
-                    time.sleep(3)
-                    self.runServer()
-                    print('Exiting process...')
-                time.sleep(30)
+                # now = datetime.now()
+                # if now.hour == int(sch.split(':')[0]) and now.minute == int(sch.split(':')[1]):
+                print('Starting process...')
+                project.server.run(project.constants.repository)
+                time.sleep(3)
+                self.runServer()
+                time.sleep(3)
+                project.server.run('sudo rm -r ' + project.constants.directory)
+                print('Exiting process...')
+                time.sleep(43200)
             except Exception as e:
                 print(e)
                 time.sleep(100)
@@ -221,4 +216,4 @@ class Main(object):
 
 if __name__ == '__main__':
     main = Main()
-    main.schedule(sys.argv[1])
+    main.schedule() #sys.argv[1])
