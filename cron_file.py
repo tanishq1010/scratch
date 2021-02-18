@@ -4,7 +4,7 @@ import sys
 import smtplib
 import pytz
 from datetime import datetime
-from os import path
+import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
@@ -14,14 +14,14 @@ from email import encoders
 class Constants(object):
     def __init__(self):
         super(Constants, self).__init__()
-        self._repository = ''
-        self._directory = 'get_question_errors_cg'
-        self._command = 'python3 question_errors_cg_learning_objects_versions.py'
-        self._filename = ['Results2/results.csv']
+        self._repository = 'git clone git@bitbucket.org:ajayranwaembibe/fiber_checklist.git'
+        self._directory = 'fiber_checklist/'
+        self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "6th CBSE" "CBSE"'
+        self._filename = os.listdir(self._directory+'Results/*.csv')
         self._from_address = 'automation-ui@embibe.com'
-        self._to_address = ['tanishq.rohela@embibe.com','harpreet.consultant@embibe.com']
+        self._to_address = ['tanishq.rohela@embibe.com']
         self._email_subject = "UAT Dump"
-        self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for JIO Fiber Learn Regression at time - {}</p></p>"
+        self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for "+self._email_subject+"</p><p>{}</p</p>"
         self._email_password = "Embibe@333"
 
     @property
@@ -87,13 +87,10 @@ class Email(object):
         size = 0
         try:
             for file in r:
-                file = self._directory + file
                 size += os.stat(file).st_size
-            print
-            size
+            print (size)
         except Exception as e:
-            print
-            e
+            print (e)
             return False
         if size > 25000000:
             return False
@@ -111,10 +108,9 @@ class Email(object):
             for file in attachment_filename:
                 attachment = None
                 try:
-                    attachment = open(self._directory + file, "rb")
+                    attachment = open(file, "rb")
                 except Exception as e:
-                    print
-                    e
+                    print(e)
                 p = MIMEBase('application', 'octet-stream')
                 p.set_payload((attachment).read())
                 encoders.encode_base64(p)
@@ -179,6 +175,14 @@ class Main(object):
             data = f.read()
         return data
 
+    def getDescription(dir):
+        try:
+            data = open(dir+'description.html','r').read()
+            return data
+        except Exception as e:
+            print(e)
+            return None
+
     def runServer(self):
         project = self._project
         project.server.run('cd ' + project.constants.directory + ' && ' + project.constants.command)
@@ -190,7 +194,7 @@ class Main(object):
         IST = pytz.timezone('Asia/Kolkata')
         datetime_ist = datetime.now(IST)
         e_sub = project.constants.email_subject  # .format(str(datetime_ist).split('.')[0])
-        e_body = project.constants.email_body.format(str(datetime_ist).split('.')[0])
+        e_body = project.constants.email_body.format(self.getDescription(project.constants.directory))
         e_file = project.constants.filename
         project.email.directory = project.constants.directory
         time.sleep(5)
