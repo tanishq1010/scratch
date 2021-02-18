@@ -20,7 +20,7 @@ class Constants(object):
         self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "All Exams" "All Goals"'
         self._filename = ''
         self._from_address = 'automation-ui@embibe.com'
-        self._to_address = ['tanishq.rohela@embibe.com','automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','raju@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com']
+        self._to_address = ['automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com','karan@embibe.com','abhijit@embibe.com','ravi@embibe.com','ravi.srivastav@embibe.com','niting.consultant@embibe.com','rajveer@embibe.com','rajeev.pathak@embibe.com','ahamed.musthafa@embibe.com','khwaab.bansal@embibe.com','karthik@embibe.com','dixit.jain@embibe.com','atul.kumar@embibe.com','vaibhav@embibe.com']
         self._email_subject = "Automated Regression Suite for All Goals & Exams - Fiberdemo Environment"
         self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for "+self._email_subject+"</p><p>{}</p</p>"
         self._email_password = "Embibe@333"
@@ -195,20 +195,20 @@ class Main(object):
         time.sleep(5)
         project.email.sendemail(e_from, e_pass, e_sub, e_body, e_file)
 
-    def schedule(self): #, sch):
+    def schedule(self, sch):
         project = self._project
         while True:
             try:
-                # now = datetime.now()
-                # if now.hour == int(sch.split(':')[0]) and now.minute == int(sch.split(':')[1]):
-                print('Starting process...')
-                project.server.run(project.constants.repository)
-                time.sleep(3)
-                self.runServer()
-                time.sleep(3)
-                project.server.run('sudo rm -r ' + project.constants.directory)
-                print('Exiting process...')
-                time.sleep(43200)
+                now = datetime.now()
+                if now.hour == int(sch.split(':')[0]) and now.minute == int(sch.split(':')[1]):
+                    print('Starting process...')
+                    project.server.run(project.constants.repository)
+                    time.sleep(3)
+                    self.runServer()
+                    time.sleep(3)
+                    project.server.run('sudo rm -r ' + project.constants.directory)
+                    print('Exiting process...')
+                time.sleep(30)
             except Exception as e:
                 print(e)
                 time.sleep(100)
@@ -216,4 +216,4 @@ class Main(object):
 
 if __name__ == '__main__':
     main = Main()
-    main.schedule() #sys.argv[1])
+    main.schedule(sys.argv[1])
