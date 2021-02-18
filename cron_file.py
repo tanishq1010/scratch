@@ -17,11 +17,11 @@ class Constants(object):
         super(Constants, self).__init__()
         self._repository = 'git clone git@bitbucket.org:ajayranwaembibe/fiber_checklist.git'
         self._directory = 'fiber_checklist/'
-        self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "8th CBSE" "CBSE"'
+        self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "All Exams" "All Goals"'
         self._filename = ''
         self._from_address = 'automation-ui@embibe.com'
         self._to_address = ['tanishq.rohela@embibe.com']
-        self._email_subject = "Automated Regression Suite for All Goals & Exams - Fiberdemo Environment"
+        self._email_subject = "UAT Dump"
         self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for "+self._email_subject+"</p><p>{}</p</p>"
         self._email_password = "Embibe@333"
 
@@ -115,7 +115,7 @@ class Email(object):
                 p = MIMEBase('application', 'octet-stream')
                 p.set_payload((attachment).read())
                 encoders.encode_base64(p)
-                p.add_header('Content-Disposition', "attachment; filename= %s" % file)
+                p.add_header('Content-Disposition', "attachment; filename= %s" % file.split('/')[-1])
                 msg.attach(p)
         else:
             print('size exceeded 25MB.')
