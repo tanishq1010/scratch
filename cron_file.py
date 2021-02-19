@@ -1,8 +1,7 @@
-import os
+
 import time
 import sys
 import smtplib
-import pytz
 from datetime import datetime
 import os
 import glob
@@ -17,10 +16,10 @@ class Constants(object):
         super(Constants, self).__init__()
         self._repository = 'git clone git@bitbucket.org:ajayranwaembibe/fiber_checklist.git'
         self._directory = 'fiber_checklist/'
-        self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "7th CBSE" "CBSE"'
+        self._command = 'python3 fiber_flow.py "https://fiberdemoms-cdn.embibe.com" "All Exams" "All Goals"'
         self._filename = ''
         self._from_address = 'automation-ui@embibe.com'
-        self._to_address = ['tanishq.rohela@embibe.com'] #['automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com','karan@embibe.com','abhijit@embibe.com','ravi@embibe.com','ravi.srivastav@embibe.com','niting.consultant@embibe.com','rajveer@embibe.com','rajeev.pathak@embibe.com','ahamed.musthafa@embibe.com','khwaab.bansal@embibe.com','karthik@embibe.com','dixit.jain@embibe.com','atul.kumar@embibe.com','vaibhav@embibe.com']
+        self._to_address = ['automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com','karan@embibe.com','abhijit@embibe.com','ravi@embibe.com','ravi.srivastav@embibe.com','niting.consultant@embibe.com','rajveer@embibe.com','rajeev.pathak@embibe.com','ahamed.musthafa@embibe.com','khwaab.bansal@embibe.com','karthik@embibe.com','dixit.jain@embibe.com','atul.kumar@embibe.com','vaibhav@embibe.com']
         self._email_subject = "Automated Regression Suite for All Goals & Exams - Fiberdemo Environment"
         self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for "+self._email_subject+"</p><p>{}</p</p>"
         self._email_password = "Embibe@333"
@@ -190,9 +189,6 @@ class Main(object):
         project.email.to_address = project.constants.to_address
         e_from = project.constants.from_address
         e_pass = project.constants.email_password
-        UTC = pytz.utc
-        IST = pytz.timezone('Asia/Kolkata')
-        datetime_ist = datetime.now(IST)
         e_sub = project.constants.email_subject  # .format(str(datetime_ist).split('.')[0])
         e_body = project.constants.email_body.format(self.getDescription(project.constants.directory))
         # e_file = glob.glob(project.constants.directory+'Results/*.csv')
