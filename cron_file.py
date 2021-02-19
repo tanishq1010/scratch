@@ -17,10 +17,10 @@ class Constants(object):
         super(Constants, self).__init__()
         self._repository = 'git clone git@bitbucket.org:ajayranwaembibe/fiber_checklist.git'
         self._directory = 'fiber_checklist/'
-        self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "All Exams" "All Goals"'
+        self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "7th CBSE" "CBSE"'
         self._filename = ''
         self._from_address = 'automation-ui@embibe.com'
-        self._to_address = ['automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com','karan@embibe.com','abhijit@embibe.com','ravi@embibe.com','ravi.srivastav@embibe.com','niting.consultant@embibe.com','rajveer@embibe.com','rajeev.pathak@embibe.com','ahamed.musthafa@embibe.com','khwaab.bansal@embibe.com','karthik@embibe.com','dixit.jain@embibe.com','atul.kumar@embibe.com','vaibhav@embibe.com']
+        self._to_address = ['tanishq.rohela@embibe.com'] #['automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com','karan@embibe.com','abhijit@embibe.com','ravi@embibe.com','ravi.srivastav@embibe.com','niting.consultant@embibe.com','rajveer@embibe.com','rajeev.pathak@embibe.com','ahamed.musthafa@embibe.com','khwaab.bansal@embibe.com','karthik@embibe.com','dixit.jain@embibe.com','atul.kumar@embibe.com','vaibhav@embibe.com']
         self._email_subject = "Automated Regression Suite for All Goals & Exams - Fiberdemo Environment"
         self._email_body = "<html><body><p><center><font color='red'><i>*****This is an auto-generated email. Please do not reply.*****</i></font></center></p><p>Hi All,<br> PFA the output files for "+self._email_subject+"</p><p>{}</p</p>"
         self._email_password = "Embibe@333"
@@ -177,6 +177,12 @@ class Main(object):
             print(e)
             return None
 
+    def installRequirements(self, directory):
+        try:
+            os.system('sudo pip3 install -r ' + directory + 'r.txt')
+        except Exception as e:
+            print(e)
+
     def runServer(self):
         project = self._project
         project.server.run('cd ' + project.constants.directory + ' && ' + project.constants.command)
@@ -189,7 +195,7 @@ class Main(object):
         datetime_ist = datetime.now(IST)
         e_sub = project.constants.email_subject  # .format(str(datetime_ist).split('.')[0])
         e_body = project.constants.email_body.format(self.getDescription(project.constants.directory))
-        #e_file = glob.glob(project.constants.directory+'Results/*.csv')
+        # e_file = glob.glob(project.constants.directory+'Results/*.csv')
         e_file=['fiber_checklist/Consolidated_Results.xlsx']
         print(e_file)
         project.email.directory = project.constants.directory
@@ -204,6 +210,8 @@ class Main(object):
                 if now.hour == int(sch.split(':')[0]) and now.minute == int(sch.split(':')[1]):
                     print('Starting process...')
                     project.server.run(project.constants.repository)
+                    time.sleep(3)
+                    self.installRequirements(project.constants.directory)
                     time.sleep(3)
                     self.runServer()
                     time.sleep(3)
