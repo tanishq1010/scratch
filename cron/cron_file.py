@@ -16,7 +16,7 @@ class Constants(object):
         super(Constants, self).__init__()
         self._repository = 'git clone git@bitbucket.org:ajayranwaembibe/fiber_checklist.git'
         self._directory = 'fiber_checklist/'
-        self._command = 'python3 fiber_flow.py "https://fiberdemoms-cdn.embibe.com" "All Exams" "All Goals"'
+        self._command = 'python3 fiber_flow.py "https://fiberdemoms.embibe.com" "All Exams" "All Goals"'
         self._filename = ''
         self._from_address = 'automation-ui@embibe.com'
         self._to_address = ['automation-testing@embibe.com','testing-embibe@embibe.com','kk.agarwal@embibe.com','yaskadeva.bayari@embibe.com','fiberappqa@embibe.com','perfteam@embibe.com','karan@embibe.com','abhijit@embibe.com','ravi@embibe.com','ravi.srivastav@embibe.com','niting.consultant@embibe.com','rajveer@embibe.com','rajeev.pathak@embibe.com','ahamed.musthafa@embibe.com','khwaab.bansal@embibe.com','karthik@embibe.com','dixit.jain@embibe.com','atul.kumar@embibe.com','vaibhav@embibe.com']
