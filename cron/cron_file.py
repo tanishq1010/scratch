@@ -192,7 +192,7 @@ class Main(object):
         e_sub = project.constants.email_subject  # .format(str(datetime_ist).split('.')[0])
         e_body = project.constants.email_body.format(self.getDescription(project.constants.directory))
         # e_file = glob.glob(project.constants.directory+'Results/*.csv')
-        e_file=['fiber_checklist/Consolidated_Results.xlsx']
+        e_file=['fiber_checklist/Consolidated_Results.xlsx','fiber_checklist/Consolidated_Results_Errors.xlsx']
         print(e_file)
         project.email.directory = project.constants.directory
         time.sleep(5)
