@@ -24,11 +24,12 @@ cursor = collection.find(query, projection=projection)
 df1=pd.DataFrame(columns=['id','code'])
 for doc in cursor:
     id=doc['id']
+    print(id)
     for item in doc['content']['question_meta_tags']:
         for item in item['learning_maps']:
             lm=item
             df1['id']=id
             df1['code']=lm
-    
+
 # df1 = pd.DataFrame(list(cursor))
 df1.to_csv('mongo_data.csv', index=False)
