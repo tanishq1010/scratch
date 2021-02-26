@@ -38,4 +38,4 @@ df.to_csv('mong-_data.csv',index=False)
     
 
 # df1 = pd.DataFrame(list(cursor))
-df1.to_csv('mongo_data.csv', index=False)
+# df1.to_csv('mongo_data.csv', index=False)
