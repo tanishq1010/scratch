@@ -28,6 +28,7 @@ for doc in cursor:
     for item in doc['content']['question_meta_tags']:
         for item in item['learning_maps']:
             lm=item
+            print(lm)
             df1['id']=id
             df1['code']=lm
 
