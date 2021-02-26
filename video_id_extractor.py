@@ -21,17 +21,21 @@ projection = {'_id': 0,'id':1,'content.question_meta_tags.learning_maps':1}
 
 
 cursor = collection.find(query, projection=projection)
-df1=pd.DataFrame(columns=['id','code'])
+questions = []
 for doc in cursor:
     id=doc['id']
-    print(id)
+    _lms = []
     for item in doc['content']['question_meta_tags']:
-        for item in item['learning_maps']:
-            lm=item
-            # print(lm)
-            # df1['id']=id
-            df1['code']=lm
-            df1.loc[len(df)]=[id,lm]
+        for lms in item.get('learning_maps',[]):
+            _lms.extend(lms)
+    
+    question_meta = {'id':id,'lms':_lms}
+    questions.append(question_meta)
+
+df = pd.DataFrame(questions)
+df.to_csv('mong-_data.csv',index=False)
+    
+    
 
 # df1 = pd.DataFrame(list(cursor))
 df1.to_csv('mongo_data.csv', index=False)
