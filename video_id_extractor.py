@@ -26,16 +26,17 @@ for doc in cursor:
     id=doc['id']
     _lms = []
     for item in doc['content']['question_meta_tags']:
-        for lms in item.get('learning_maps',[]):
-            _lms.extend(lms)
+        _lms.extend(item.get('learning_maps',[]))
     
-    question_meta = {'id':id,'lms':_lms}
-    questions.append(question_meta)
+    for lm in _lms:
+        question_meta = {'id':id,'lms':lm}
+        questions.append(question_meta)
 
 df = pd.DataFrame(questions)
 df.to_csv('mong-_data.csv',index=False)
-    
-    
+
+
 
 # df1 = pd.DataFrame(list(cursor))
-# df1.to_csv('mongo_data.csv', index=False)
+# df1.to_csv('mongo_data.csv', inde
+# x=False)
