@@ -28,9 +28,10 @@ for doc in cursor:
     for item in doc['content']['question_meta_tags']:
         for item in item['learning_maps']:
             lm=item
-            print(lm)
-            df1['id']=id
+            # print(lm)
+            # df1['id']=id
             df1['code']=lm
+            df1.loc[len(df)]=[id,lm]
 
 # df1 = pd.DataFrame(list(cursor))
 df1.to_csv('mongo_data.csv', index=False)
