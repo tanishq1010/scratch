@@ -117,3 +117,4 @@ def CG_identifier():
     # print(df)
     df = df[['Goal', 'Exam', 'Id', 'Learnpath_name', 'Title']]
     df.to_csv('CG_DATA.csv', index=False)
+CG_identifier()
