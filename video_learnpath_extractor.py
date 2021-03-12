@@ -1,3 +1,5 @@
+from pymongo import MongoClient
+import pandas as pd
 def learning_objects_collection():
     client = MongoClient(
         "mongodb://ro_dsl:EHJpUwVO2vgMuk@10.141.11.78/contentgrail")
