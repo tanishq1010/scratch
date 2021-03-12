@@ -79,7 +79,7 @@ def get_question_data():
     projection['id'] = 1
     projection['_id'] = 0
     projection['content.augmented_attributes.app_title'] = 1
-    cursor = collection.find(querry, projection=projection).limit(100)
+    cursor = collection.find(querry, projection=projection)
     df = pd.DataFrame(columns=['id', 'Title'])
     for doc in list(cursor):
         try:
